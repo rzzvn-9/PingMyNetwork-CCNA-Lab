@@ -1,6 +1,6 @@
 # Small Office Network — VLAN Segmentation & Secure Management
 
-![Small office network topology](small-office-network-topology.png)
+![Small office network topology](small-office-network/small-office-network-topology.png)
 
 I built this lab in Cisco Packet Tracer to practice setting up a small office network, from VLANs and routing to access restrictions and remote management.
 
