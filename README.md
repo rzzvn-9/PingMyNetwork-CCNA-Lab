@@ -54,7 +54,7 @@ During testing, the PCs received these leases:
 | Employees | 192.168.10.21, 192.168.10.22 |
 | Guests | 192.168.20.21, 192.168.20.22 |
 
-SRV1 has a static address and runs both DNS and HTTP. I added an A record pointing `portal.firma.test` to `192.168.30.10`, then tested the default webpage from a client browser.
+SRV1 has a static address and runs both DNS and HTTP. I added an A record pointing `portal.dns.test` to `192.168.30.10`, then tested the default webpage from a client browser.
 
 ## Restricting guest access
 
@@ -102,7 +102,7 @@ The missing piece was on SRV1 itself: I hadn't assigned its IP address. After se
 |---|---|
 | All four PCs receive DHCP leases | Passed |
 | PC1 pings SRV1 across VLANs | Passed |
-| PC1 opens `http://portal.firma.test` | Passed |
+| PC1 opens `http://portal.dns.test` | Passed |
 | Guest PC opens the same webpage after applying the ACL | Passed |
 | Guest PC pings SRV1 after applying the ACL | Blocked as intended |
 | Guest PC pings PC1 after applying the ACL | Blocked as intended |
